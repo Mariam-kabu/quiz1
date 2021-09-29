@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Survey Form</h1>
+        <div class="form-div">
+            <h4>Let us know how we can improve freeCodeCamp</h4>
+            <form action="#">
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <label style="text-align: end;" for="fname">*Name:</label>
+                    <input style="text-align: start;" type="text" id="name" name="fname" placeholder="Enter your name" required>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <label style="text-align: end;" for="lname">*Email:</label>
+                    <input style="text-align: start;" type="email" id="email" name="lname" placeholder="Enter your Email" required>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <label style="text-align: end;" for="lname">*Age:</label>
+                    <input style="text-align: start;" type="number" id="age" name="lname" placeholder="Age" required>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <label style="text-align: end;" for="role">Which option describes your current role?</label>
+                    <select style="text-align: start;" name="role" id="role">
+                        <option value="student">Student</option>
+                        <option value="student">Student</option>
+                        <option value="student">Student</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <span style="text-align: end;">How likely is that you would recommend <br> freeCodeCamp to a friend?</span>
+                    <div style="text-align: start;">
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>Definitely</span>
+                        </label><br>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>Maybe</span>
+                        </label><br>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>Not sure</span>
+                        </label><br>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <label style="text-align: end;" for="role">What do you like the most in FCC:</label>
+                    <select style="text-align: start;" name="role" id="role">
+                        <option value="student">select an option</option>
+                        <option value="student">...</option>
+                        <option value="student">...</option>
+                        <option value="student">...</option>
+                    </select>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <h4 style="text-align: end; margin-right: 15px;"> Things that should be improved in hte future <br> (Check all that apply):</h4>
+                    <div style="text-align: start;">
+                        <label>
+                            <input type="checkbox">
+                            <span>Front-end Projects</span>
+                        </label><br>
+                        <label>
+                            <input type="checkbox">
+                            <span>Back-end Projects</span>
+                        </label><br>
+                        <label>
+                            <input type="checkbox">
+                            <span>Data Visualization</span>
+                        </label><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
